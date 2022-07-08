@@ -62,4 +62,8 @@ public class Calculator {
         response.add(min2);
         return response;
     }
+    public Double getReduce ( List<Double> array) {
+        return array.stream().reduce((acum, number) ->  acum + number).get();
+    }
+
 }
