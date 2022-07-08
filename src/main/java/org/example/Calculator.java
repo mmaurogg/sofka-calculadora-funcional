@@ -17,7 +17,7 @@ public class Calculator {
     }
 
     public List<Double> multiplication (List<Double> array1, List<Double> array2){
-        return array1.stream().map( item -> item / array2.get(array1.indexOf(item)))
+        return array1.stream().map( item -> item * array2.get(array1.indexOf(item)))
                 .collect(Collectors.toList());
     }
 
